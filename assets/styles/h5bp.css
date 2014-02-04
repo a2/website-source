@@ -157,13 +157,18 @@ header ul li a:hover {
 }
 
 #content {
-    font-family: Georgia;
+    font-family: Helvetica;
     display: inline;
     border-right: 1px rgba(0, 0, 0, 0.0742188) solid;
     font-size: 14px;
     text-align: justify;
     text-align-last: left;
     padding-right: 8px;
+}
+
+#content p {
+    font-family: "Source Sans Pro", "Helvetica", sans-serif;
+    font-size: 14pt / 18pt;
 }
 
 .footer {
