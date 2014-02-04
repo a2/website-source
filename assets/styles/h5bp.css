@@ -98,7 +98,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 * {
-    font-family: "Georgia";
+    font-family: "Source Sans Pro", "Helvetica", sans-serif;
     font-weight: lighter;
     font-size: 18px;
     line-height: 28px;
@@ -157,7 +157,7 @@ header ul li a:hover {
 }
 
 #content {
-    font-family: Helvetica;
+    font-family: "Source Sans Pro", "Helvetica", sans-serif;
     display: inline;
     border-right: 1px rgba(0, 0, 0, 0.0742188) solid;
     font-size: 14px;
@@ -226,7 +226,7 @@ header ul li a:hover {
 }
 
 .post-list li a {
-    font-family: Helvetica;
+    font-family: "Source Sans Pro", "Helvetica", sans-serif;
     font-weight: lighter;
     font-size: 22px;
     color: #0595fa;
@@ -267,7 +267,7 @@ pre code, .highlight pre code span{
 
 .footer .wrapper, .footer .wrapper a {
         font-size: 11px;
-        font-family: "Helvetica";
+        font-family: "Source Sans Pro", "Helvetica", sans-serif;
 }
 
 .footer .wrapper {
