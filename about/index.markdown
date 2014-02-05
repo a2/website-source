@@ -9,7 +9,7 @@ pretext: false
 # About Daniel
 
 <img src="/assets/images/profile.jpg" class="profile" draggable='false' />
-Hey, I'm Daniel. I build user-centered mobile applications at <a href="http://wearebase.com">Base</a>. I love to know what makes things tick, and to see solutions in problems.
+Hey, I'm Daniel. I build user-centered mobile applications at <a href="http://wearebase.com">WeAreBase</a>. I love to know what makes things tick, and to see solutions in problems.
 
 I'm passionate about building software that people will *love* to use, and strive to solve new problems, and improve existing solutions to create better experiences for the user.
 
