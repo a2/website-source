@@ -9,15 +9,12 @@ pretext: false
 # About Daniel
 
 <img src="/assets/images/profile.jpg" class="profile" draggable='false' />
-Hey, I'm Daniel. I build user-centered mobile applications at <a href="http://wearebase.com">WeAreBase</a>. I love to know what makes things tick, and to see solutions in problems.
+Hello, my name is Daniel Tomlinson. I build iOS App's and write things. 
 
-I'm passionate about building software that people will *love* to use, and strive to solve new problems, and improve existing solutions to create better experiences for the user.
+I'm a Mobile App Engineer at [WeAreBase](http://wearebase.com), build my own products at *TBA*, and write a regular column for the [Observer](http://observer.theguardian.com).
 
-I also love going to various events (such as conferences and hackathons), and enjoy to hear about how others have solved various problems, and to help others who may have experienced similar problems.
+I live and work by the sea in Bournemouth, England - but I hail from the City of Derby and occasionally return to see my family.
 
+I love to write, and will occasionally post articles here about things that I'm passionate about, such as technology, education, programming, and other thoughts that may arise.
 
-I have also received a couple of awards, such as a Google Code Award and the Young Rewired State Should Exist category.
-
-I also like to write, hence running this blog, and writing for the Observer as a monthly tech columnist in the Observer Tech Monthly.
-
-If you'd like to talk, you can email me: [Dan@Tomlinson.io](mailto:Dan@Tomlinson.io)
+If you'd like to get in touch, my email address is: [Dan@Tomlinson.io](Dan@Tomlinson.io)
