@@ -166,6 +166,10 @@ header ul li a:hover {
     padding-right: 8px;
 }
 
+#content h1 {
+    font-family: "proxima-nova";
+}
+
 #content p a {
     font-family: "Source Sans Pro", "Helvetica", sans-serif;
     font-size: 14pt / 18pt;
