@@ -12,15 +12,20 @@
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
         <!-- TradeDoubler site verification 2369198 -->
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:js /assets/scripts/vendor/modernizr.js -->
-        <script src="/bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:css /assets/styles/main.css -->
-        <link rel="stylesheet" href="http://necolas.github.io/normalize.css/2.1.3/normalize.css">
         <link rel="stylesheet" href="/assets/styles/h5bp.css">
-        <link rel="stylesheet" href="/bower_components/font-awesome/build/assets/font-awesome/css/font-awesome.css">
-        <!-- endbuild -->
+
+        <meta property="og:image" content="http://gravatar.com/avatar/fe1614198a51ce64d173299244557a71?s=50">
+        <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}">
+        <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+        <meta property="og:site_name" content="{{ site.name }}">
+        <meta property="og:type" content="blog">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+        <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}">
+        <meta name="twitter:image" content="http://gravatar.com/avatar/fe1614198a51ce64d173299244557a71?s=120">
+        <meta name="twitter:site" content="@DanToml">
+        <meta name="twitter:creator" content="@DanToml">
+        <meta name="twitter:domain" content="{{ site.url }}">
 </head>
     <body>
         <!--[if lt IE 7]>
