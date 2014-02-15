@@ -7,7 +7,7 @@ categories: [articles, projects, ProjectHermes]
 ---
 <img src="/assets/yrs.png" style="display:none;"/>
 ProjectHermes began as my project for [Young Rewired State 2013](https://youngrewiredstate.org), and then (after a mad rebuilding couple of hours after a computer died), went on to win the "Should Exist" category.
-
+<!-- more -->
 # ProjectHermes
 ProjectHermes is a tool for finding those who wish to hurt others through the internet, that detects trolls, racists, misogynists and bullies through natural language analysis.
 

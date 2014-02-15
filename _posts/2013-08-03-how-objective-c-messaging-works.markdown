@@ -7,7 +7,7 @@ categories: [ios, development, objective-c]
 ---
 
 I have always been interested in how the low level of programming languages work, and lots a fair few people on IRC and Twitter have asked how messaging in objective-c works, so I've decided to blog about it!
-
+<!-- more -->
 To understand how messaging in objective-c works, we first need to understand how its objects are represented in memory.
 
 To understand what an object really is, we need to go to the lowest-level of the object - its representation in memory, and to understand the Objective-C memory model, you must first understand that of C.

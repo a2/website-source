@@ -1,461 +1,227 @@
-/*
- * HTML5 Boilerplate
- *
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
+
+$heading-font-stack: "proxima-nova", "Source Sans Pro", "Helvetica", sans-serif;
+$font-stack: "adelle", serif;
+
+$background-color: #FFFFFF;
+$heading-font-color: #000000;
+$body-font-color: rgb(61, 61, 61);
+$accent-color: #0595fa;
+
+$base-font-size: 16pt;
+$base-line-height: 19pt;
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+         -o-border-radius: $radius;
+            border-radius: $radius;
+}
+
+@mixin animate($property, $duration) {
+    -webkit-transition: $property $duration ease-in-out;
+       -moz-transition: $property $duration ease-in-out;
+        -ms-transition: $property $duration ease-in-out;
+         -o-transition: $property $duration ease-in-out;
+            transition: $property $duration ease-in-out;
+    
+    
+}
+
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
  */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-* {
-    box-sizing:border-box;
-}
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
-    background-color: #f9f9f9;
-    padding: 0px;
-}
-
-body {
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
-
-img {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
     padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
 
-textarea {
-    resize: vertical;
+// BEGIN SCSS
+
+
+body {
+    font-family: $font-stack;
+    color: $body-font-color;
+    font-size: $base-font-size;
+    line-height: $base-line-height * 1.2;
+    text-align: justify;
+    text-align-last: left;
 }
 
-/* ==========================================================================
-   Chrome Frame prompt
-   ========================================================================== */
-
-.chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+h1 {
+    font-family: $heading-font-stack;
+    font-size: $base-font-size * 1.7;
+    line-height: $base-line-height * 1.7;
+    color: $heading-font-color;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-* {
-    font-family: "Source Sans Pro", "Helvetica", sans-serif;
-    font-weight: lighter;
-    font-size: 18px;
-    line-height: 28px;
-}
-
-a, span {
-    color: #0595fa;
-    text-decoration: none;
+a {
+    color: $body-font-color;
+    @include animate(color, .25s);
 }
 
 a:hover {
-    text-decoration: underline;
+    color: $accent-color;
 }
 
 header {
-    width: 100%;
-    display: block;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
-header a {
+header .name, header h1 {
+    text-align: center;
     text-decoration: none;
-    display: inline-block;
+    font-size: $base-font-size * 2.5;
+    line-height: $base-line-height * 2.5;
+    font-family: "adelle", serif;
+
+    @include animate(color, .25s);
 }
 
-header a h1 {
-    color: #000;
-    text-decoration: none;
+header .name:hover, header h1:hover {
+    color: $accent-color;
+    
 }
 
-header ul {
-    display: inline-block;
-    margin-left: -20px;
+.nav {
+    margin-top: 20px;
+    list-style: none;
+    text-align: center;
 }
 
-header ul li {
+.nav li {
+    list-style: none;
     display: inline;
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-header ul li a {
-    color: rgb(85, 85, 85);
-    font-size: 18px;
+.nav li a {
+    text-decoration: none;
+    font-family: "ff-tisa-web-pro", "adelle", serif;
+    color: $heading-font-color;
+
+    @include animate(color, .25s);
 }
 
-header ul li a:hover {
-    color: #0595fa;
+.nav li a:hover {
+    color: $accent-color;
 }
-
-
 
 .wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    max-width: 600px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-#content {
-    font-family: "Source Sans Pro", "Helvetica", sans-serif;
-    display: inline;
-    border-right: 1px rgba(0, 0, 0, 0.0742188) solid;
-    font-size: 14px;
-    text-align: justify;
-    text-align-last: left;
-    padding-right: 8px;
+.posts {
+
 }
 
-#content p a {
-    font-family: "Source Sans Pro", "Helvetica", sans-serif;
-    font-size: 14pt / 18pt;
+.posts li {
+    margin-bottom: 20px;
+    text-align: left;
 }
 
-#content p {
-    font-family: "Source Sans Pro", "Helvetica", sans-serif;
-    font-size: 14pt / 18pt;
-}
-
-.footer {
-    font-family: 'Helvetica', sans-serif;
-    background-color: #333333;
-    color: white;
-    padding: 8px;
-    font-size: 13px;
-    line-height: 28px;
-    width: 100%;
-    position: relative;
-    left: -10px;
-    top: 10px;
-}
-
-.footer a {
-    color: white;
-    text-decoration: underline;
-}
-
-.footer a:hover {
-}
-
-.post-list {
-    font-family: Georgia;
-    display: inline;
-    border-right: 1px rgba(0, 0, 0, 0.0742188) solid;
-    font-size: 14px;
-    text-align: justify;
-    text-align-last: left;
-    padding-right: 8px;
-    padding: 0px;
-    margin:0px 0px;
-}
-
-.post-list li {
-    padding: 15px 15px 15px 0px;
-    margin:0px 0px;
-    list-style: none;
-    width: 100%;
-    color: #ABABAB;
-    font-family: Helvetica;
-    font-size: 16px;
-    border-top: 1px rgba(0, 0, 0, 0.0742188) solid;
-    border-bottom:  1px rgba(255, 255, 255, 0.746094) solid;
-}
-
-.post-list li:first-child {
-    border-top: none;
-}
-
-.post-list li:last-child {
-    border-bottom: none;
-}
-
-.post-list li a {
-    font-family: "Source Sans Pro", "Helvetica", sans-serif;
-    font-weight: lighter;
-    font-size: 22px;
-    color: #0595fa;
+.posts li a {
     text-decoration: none;
+    font-family: $heading-font-stack;
+    color: $heading-font-color;
+    font-size: $base-font-size * 1.1;
+    @include animate(color, .25s);
 }
 
-.post-list li a:hover {
-    background-color: #0595fa;
-    color: #FFF;
+.posts li a:hover {
+    color: $accent-color;
+}
+
+.posts li span {
+    font-size: $base-font-size * 0.7;
+    line-height: $base-font-size * 0.7;
+    color: lighten($body-font-color, 50%);
+}
+
+.posts li p {
+    text-align: justify;
+    text-align-last: justify;
 }
 
 .profile {
-    height: 150px;
-    width: 150px;
-    margin: 15px 0px;
-    margin-right: 15px;
+    width: 200px;
     float: left;
-    border-radius: 75px;
+    margin-top: 5px;
+    margin-right: 15px;
+    margin-bottom: 10px;
 }
 
-pre code {
-    background-color: #333;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    margin-right: -8px;
-}
-
-pre code, .highlight pre code span{
-    font-family: "Menlo";
-    font-size: 12px;
-    color: white;
-}
-
-.pagewrap {
-    padding: 0px 80px;
-}
-
-.footer .wrapper, .footer .wrapper a {
-        font-size: 11px;
-        font-family: "Source Sans Pro", "Helvetica", sans-serif;
-}
-
-.footer .wrapper {
-}
-
-.wrapper.about {
-    font-size: 14px;
-    line-height: 19px;
+footer {
+    font-size: $base-font-size * 0.6;
+    line-height: $base-line-height * 0.9;
     margin-bottom: 15px;
 }
 
-.wrapper.about span {
-    font-size: 14px;
-    line-height: 19px;
-    color: black;
+footer a {
+    color: $body-font-color;
 }
 
-.wrapper.about a {
-    font-size: 13px;
-    line-height: 18px;
+p {
+    margin-bottom: $base-line-height * 1.2;
 }
 
-@media screen and (max-width: 640px) {
-    .pagewrap {
-        padding: 0px;
-    }
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
 
-    header a {
-        display: block;
-        text-align: center;
-        width: 100%;
-        padding: 0px;
-        margin: 0px;
-    }
-
-    header ul {
-        display: block;
-        width: 100%;
-    }
-    header ul li {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        margin: 0px;
-        background-color: #EEE;
-    }
-
-    header ul li:hover {
-        background-color: #DDD;
-    }
-
-    header ul li a {
-        font-size: 21px;
-    }
-
-    .wrapper {
-        padding: 0px 15px;
-    }
-
-    .profile {
-        height: 100px;
-        width: 100px;
-        margin: 15px 0px;
-        margin-right: 15px;
-        float: left;
-        border-radius: 50px;
-    }
-
-    #content, #content p, #content ul li {
-        padding: 0px 10px;
-        font-size: 14pt / 18pt;
-    }
-
-    #content h1, #content h2, #content h3 {
-        padding: 0px 10px;
+@media screen and (max-width: 850px) {
+    body {
+        padding: 30px;
     }
 }
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Image replacement
- */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-/*
- * Hide from both screenreaders and browsers
- */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-/*
- * Hide only visually, but have it available for screenreaders
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
-.clearfix {
-    *zoom: 1;
-}
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
 
 
-/* code highlighting */
 
 .c { color: #999999; font-style: italic } /* Comment */
 .err { color: #d0d0d0 } /* Error */

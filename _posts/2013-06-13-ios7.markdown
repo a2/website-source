@@ -7,7 +7,7 @@ categories: [Articles, iOS, Thoughts, Design, UX]
 ---
 
 As most of you will know, Apple re-released its new child into the world - iOS 7, a re-imagined iOS with a brand new design, interactions and API's. Sadly many of us, turned to Twitter/FaceBook/Blogs/\[Insert other social media here\] to criticise and insult the aesthetics. Without using the OS, or even seeing more than a few glimpses in front of the unveiling. And I admit, even I did the same, and was extremely close to selling my iPhone on eBay, getting an Android and doing Java for a while.
-
+<!-- more -->
 However, I took a step back, looked again and thought "there might just be something to this", so I downloaded the beta at the first possible chance, and have fallen in love with my iPhone all over again. Ok, some of the home screen icons are quite garish with their 80's neon colours, but even Apple has said that it isn't yet [finished with the design](http://www.cultofmac.com/231674/apples-designers-werent-in-charge-of-ios-7-icons-overall-design-still-a-work-in-progress/ "Cult Of Mac - Apple Not finished with Design") - in fact, it was done by their Print and Web marketing designers. This is what Apple do, they think different, come up with something new, and then refine it, again and again.
 
 Yesterday, [Matt Gemmell](http://twitter.com/mattgemmell "Matt Gemmell's Twitter") posted an excellent article to his [blog](http://mattgemmell.com/2013/06/12/ios-7/) going more in depth about the changes, and does an excellent job of it, so I won't delve deeply here.

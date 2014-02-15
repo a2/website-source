@@ -8,7 +8,7 @@ categories:  [ios, development, objective-c]
 
 Objective-C is a reflective, compiled, Object-Oriented programming language that adds Smalltalk-Style messaging to C. 
 It also tries to do as much as it can dynamically at runtime, rather than at compile time, this allows it to be used in many scenarios - such as its most common use - in applications for Mac OS X and iOS. 
-
+<!-- more -->
 To develop for iOS or Mac OS X, you need to have Xcode installed, this can be acquired from the Mac App Store at no cost to yourself, [Xcode (App Store)](https://itunes.apple.com/gb/app/xcode/id497799835?mt=12). 
 To debug on a device, or to publish an application on the app store, you also need an iOS developer license.
 

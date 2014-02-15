@@ -17,4 +17,4 @@ I live and work by the sea in Bournemouth, England - but I hail from the City of
 
 I love to write, and will occasionally post articles here about things that I'm passionate about, such as technology, education, programming, and other thoughts that may arise.
 
-If you'd like to get in touch, my email address is: [Dan@Tomlinson.io](Dan@Tomlinson.io)
+If you'd like to get in touch, my email address is: [Dan@Tomlinson.io](mailto:Dan@Tomlinson.io)

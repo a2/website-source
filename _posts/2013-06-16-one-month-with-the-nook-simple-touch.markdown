@@ -7,7 +7,7 @@ categories: [Products, E-Readers, Nook, Books]
 ---
 
 A short while ago, around a month or so, Barnes and Noble lowered the price of the [Nook SimpleTouch](http://www.amazon.co.uk/gp/product/140053271X/ref=as_li_ss_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=140053271X&linkCode=as2&tag=danietomli-21) to £29, and I decided to pick one up from Asda (By the time I got round to ordering they were sold out everywhere).
-
+<!-- more -->
 
 ## Unboxing Experience ##
 The device began to impress from the moment I opened the box, it's well built, comfortable to hold and lightweight, checking all my mental requirements for something to compete with a good old printed book. It's packaging is strong, and high quality, as are its included accessories (i.e the USB cable).

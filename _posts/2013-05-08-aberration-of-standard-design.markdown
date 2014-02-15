@@ -6,7 +6,7 @@ comments: false
 categories: [Articles, UX, UI, Design]
 ---
 As an avid user of technology and developer, I often beta test and purchase a lot of new applications, however more recently, I have noticed an ever increasing trend of applications that stray from the common methods of interaction and design, although creative, this is often terrible for the average end-user.
-
+<!-- more -->
 <hr style="width:150px; margin: 0 auto;" />
 <br />
 I really do like to see new ways of interacting with technology, in fact, I’ve tried some things myself, however, the average user often learns the common conventions of OS, such as swiping to the left on tableviews to delete items, but when this isn’t the case, on applications such as EvoMail (where to delete from the e-mail list, you must first tap an icon on the toolbar, unlike the convention of a navigation bar), it leaves the user feeling out of control and powerless. As Aral Balkan said: 
