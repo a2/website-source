@@ -268,7 +268,7 @@ pre code {
 pre code, .highlight pre code span{
     font-family: "Menlo";
     font-size: 12px;
-    color: white;
+    // color: white;
 }
 
 
@@ -282,7 +282,7 @@ pre code, .highlight pre code span{
 .n { color: #d0d0d0 } /* Name */
 .o { color: #d0d0d0 } /* Operator */
 .x { color: #d0d0d0 } /* Other */
-.p { color: #d0d0d0 } /* Punctuation */
+.p { color: #c52115 !important } /* Punctuation */
 .cm { color: #999999; font-style: italic } /* Comment.Multiline */
 .cp { color: #cd2828; } /* Comment.Preproc */
 .c1 { color: #999999; font-style: italic } /* Comment.Single */
