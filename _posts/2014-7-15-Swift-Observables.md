@@ -13,3 +13,6 @@ Type generic classes and structs in Swift make it pretty trivial to create our o
 <script src="https://gist.github.com/DanielTomlinson/c250f4ce99a2bbb647cb.js"></script>
 
 It has lots of room for improvement, for example: storing Observers inside a Bag to prevent naming collisions, using an underlying event or stream system, and custom operators for adding observers/mutating its value - but it's a nice, safer replacement for KVO.
+
+
+Let me know what you thing on [Twitter](http://twitter.com/DanToml) or in the Gist comments.
