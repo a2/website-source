@@ -4,6 +4,7 @@ title: "Contact Daniel"
 date: 1970 20:37
 comments: false
 pretext: false
+footer: true
 ---
 
 # Contact Daniel

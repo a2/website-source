@@ -4,6 +4,7 @@ title: "About Daniel"
 date: 2014 12:37
 comments: false
 pretext: false
+footer: true
 ---
 
 # About Daniel

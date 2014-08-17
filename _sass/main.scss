@@ -255,6 +255,7 @@ pre {
 }
 
 pre code {
+    color: #FFFFFF;
     background-color: #333;
     display: block;
     padding: 10px;
@@ -271,7 +272,9 @@ pre code, .highlight pre code span{
     // color: white;
 }
 
-
+.gist {
+    font-size: 12px;
+}
 
 
 .c { color: #999999; font-style: italic } /* Comment */

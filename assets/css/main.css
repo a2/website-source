@@ -197,6 +197,7 @@ h1 {
   body {
     padding: 30px; } }
 pre code {
+  color: #FFFFFF;
   background-color: #333;
   display: block;
   padding: 10px;
@@ -208,6 +209,9 @@ pre code {
 
 pre code, .highlight pre code span {
   font-family: "Menlo";
+  font-size: 12px; }
+
+.gist {
   font-size: 12px; }
 
 .c {
