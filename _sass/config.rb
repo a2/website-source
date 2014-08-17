@@ -1,1 +1,1 @@
-css_dir = "../assets/styles"
+css_dir = "../assets/css"
