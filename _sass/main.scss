@@ -7,8 +7,8 @@ $heading-font-color: #000000;
 $body-font-color: rgb(61, 61, 61);
 $accent-color: #0595fa;
 
-$base-font-size: 16pt;
-$base-line-height: 19pt;
+$base-font-size: 15pt;
+$base-line-height: 20pt;
 
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
