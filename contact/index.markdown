@@ -9,6 +9,6 @@ footer: true
 
 # Contact Daniel
 
-If you'd like to get in touch to leave feedback, or for general chat, you can reach me by:
+If you wish to get in touch to leave feedback, wish to hire me, or for general conversation, you can get in touch by:
 
-Tweeting me on Twitter \([@DanToml](http://twitter.com/dantoml)\), IM'ing on Skype \([DanToml](skype://dantoml)\), or mailing me via e-mail \([Dan@Tomlinson.io](mailto:dan@tomlinson.io)\), and I'll try to reply as soon as possible.
+Tweeting me on Twitter \([@DanToml](http://twitter.com/dantoml)\), or e-mailing me \([Dan@Tomlinson.io](mailto:dan@tomlinson.io)\), and I'll try to reply as soon as possible.
