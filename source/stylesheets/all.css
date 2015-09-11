@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+body {
+  background: #ffffff;
+  text-align: center;
+  font-family: "ff-tisa-web-pro", serif;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  color: #333333;
+}
+
+body > section {
+  text-align: left;
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 1.1em;
+}
+
+ol, ul {
+  list-style: none;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "freight-sans-pro", sans-serif;
+  margin-bottom: 0.2em;
+  padding: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-top: 1.5em;
+}
+
+a {
+  color: #932192;
+  text-decoration: none;
+}
+
+body > header h1 a, body > header h1 a:hover {
+  border: 0;
+}
+
+body > section.home > ul > li {
+  margin-bottom: 0.2em;
+}
