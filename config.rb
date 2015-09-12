@@ -26,6 +26,14 @@ configure :development do
   activate :livereload
 end
 
+helpers do
+  def recent_articles(count = 3)
+    articles = blog.articles
+
+    articles[0...count]
+  end
+end
+
 activate :blog do |blog|
   # blog.prefix = "blog"
 
@@ -34,9 +42,7 @@ activate :blog do |blog|
   # Matcher for blog source files
   blog.sources = "articles/{year}-{month}-{day}-{title}.html"
   blog.taglink = "tags/{tag}.html"
-  blog.layout = "layout"
-  blog.summary_separator = /<!--readmore-->/
-  blog.summary_length = 250
+  blog.layout = "layouts/layout"
   blog.year_link = "{year}.html"
   blog.month_link = "{year}/{month}.html"
   blog.day_link = "{year}/{month}/{day}.html"
@@ -47,3 +53,5 @@ activate :blog do |blog|
   blog.per_page = 5
   blog.page_link = "page/{num}"
 end
+
+activate :directory_indexes

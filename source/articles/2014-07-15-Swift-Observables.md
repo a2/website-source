@@ -3,6 +3,7 @@ layout: post
 title: "Observables in Swift"
 date: 2014-07-15 00:14
 categories: [Code, Swift]
+url: test
 ---
 
 As you may know, in Swift you cannot perform typical Key-Value Observing on non-NSObject subclasses. Whilst this may be an annoyance for people who make use of KVO on a regular basis, it isn't necessarily a bad thing, KVO is hard and lots of people get it wrong.
