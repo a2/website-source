@@ -26,8 +26,22 @@ configure :development do
   activate :livereload
 end
 
-configure :blog do |blog|
-  
+activate :blog do |blog|
+  # blog.prefix = "blog"
+
+  blog.permalink = "{title}.html"
+
+  # Matcher for blog source files
+  blog.sources = "articles/{title}.html"
+  blog.taglink = "tags/{tag}.html"
+  blog.layout = "layout"
+  blog.summary_separator = /<!--readmore-->/
+  blog.summary_length = 250
+  blog.year_link = "{year}.html"
+  blog.month_link = "{year}/{month}.html"
+  blog.day_link = "{year}/{month}/{day}.html"
+  blog.default_extension = ".md"
+
 	# Enable pagination
   blog.paginate = true
   blog.per_page = 5
