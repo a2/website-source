@@ -15,3 +15,8 @@ task :deploy => [:build] do
 		`git push origin master`
 	end
 end
+
+desc 'Runs the web server locally and watches for changes'
+task :run do
+ sh "bundle exec middleman server --port 4567"
+end

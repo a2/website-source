@@ -1,52 +1,3 @@
-###
-# Compass
-###
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
-###
-# Page options, layouts, aliases and proxies
-###
-
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", :layout => false
-#
-# With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
-
-# Proxy pages (https://middlemanapp.com/advanced/dynamic_pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
-#  :which_fake_page => "Rendering a fake page with a local variable" }
-
-###
-# Helpers
-###
-
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
-
-# Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
-
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
-
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
@@ -70,3 +21,48 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+configure :development do
+  activate :livereload
+end
+
+helpers do
+  def recent_articles(count = 3)
+    articles = blog.articles
+
+    articles[0...count]
+  end
+
+  def pretty_tags(article)
+    tags = article.categories || article.tags
+    string = ""
+    tags.each do |t|
+      string += ", " if string.length > 0 
+      string += t.downcase
+    end
+
+    string
+  end
+end
+
+activate :blog do |blog|
+  # blog.prefix = "blog"
+
+	blog.permalink = "{title}.html"
+
+  # Matcher for blog source files
+  blog.sources = "articles/{year}-{month}-{day}-{title}.html"
+  blog.taglink = "tags/{tag}.html"
+  blog.layout = "layouts/layout"
+  blog.year_link = "{year}.html"
+  blog.month_link = "{year}/{month}.html"
+  blog.day_link = "{year}/{month}/{day}.html"
+  blog.default_extension = ".md"
+
+	# Enable pagination
+  blog.paginate = true
+  blog.per_page = 5
+  blog.page_link = "page/{num}"
+end
+
+activate :directory_indexes
