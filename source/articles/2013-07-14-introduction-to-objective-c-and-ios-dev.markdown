@@ -18,47 +18,36 @@ A standard convention in objective-c is camelCasing of method and variable names
 
 One of the first things you will want to do is call methods, in objective-c, the basic syntax for this is:
 
-{% highlight objectivec %}
-[object method];
-[object methodWithInput:input];
-{% endhighlight %}
+    [object method];
+    [object methodWithInput:input];
 
 Methods can return objects:
 
-{% highlight objectivec %}
-output = [object methodWithOutput];
-output = [object methodWithInputAndOutput:input];
-{% endhighlight %}
+    output = [object methodWithOutput];
+    output = [object methodWithInputAndOutput:input];
 
 You can also call methods on classes for example:
 
-{% highlight objectivec %}
-id anObject = [NSURL urlWithString:@"http://iosdev.danie.lt/articles/welcome"];
-{% endhighlight %}
+    id anObject = [NSURL urlWithString:@"http://iosdev.danie.lt/articles/welcome"];
 
 In Objective-C, the _id_ type means that the _anObject_ variable can refer to any type of object, and its class, methods and properties are not known at compile time. 
 
 In that example, it's clear that the return type will be an _NSURL_, so we can change it to:
 
-{% highlight objectivec %}
-NSURL* myURL = [NSURL urlWithString:@"http://iosdev.danie.lt/articles/welcome"];
-{% endhighlight %}
+    NSURL *myURL = [NSURL urlWithString:@"http://iosdev.danie.lt/articles/welcome"];
 
 Methods can also accept multiple inputs, for example:
 
-{% highlight objectivec %}
-Person* aPerson = [Person personWithFirstName:firstName surname:surname age:age];
-{% endhighlight %}
+    Person *aPerson = [Person personWithFirstName:firstName surname:surname age:age];
 
 #### Variables and Pointers
 
 Nearly all variables in objective-c are objects (other than primitive types such as _int_, _float_ and _double_), more correctly, they are _pointers_ to objects, the * in an objects deceleration is what specifies a pointer type, _id_ is predefined as a pointer, hence its omission, for example:
 
-{% highlight objectivec %}
-id myVariable = [anArray lastObject];
-int x = 42;
-NSNumber* aNumber = [NSNumber numberWithInt:x];
-{% endhighlight %}
+
+    id myVariable = [anArray lastObject];
+    int x = 42;
+    NSNumber *aNumber = [NSNumber numberWithInt:x];
 
 #### Declaring methods
 
@@ -66,69 +55,54 @@ Public methods, are declared in a classes header (classname.h) file, and impleme
 
 In Objective-C, class methods are declared in the header like so:
 
-{% highlight objectivec %}
-// The + means class method
-+ (NSNumber *) numberWithInt:(int)aInt;
-{% endhighlight %}
+    // The + means class method
+    + (NSNumber *)numberWithInt:(int)aInt;
 
 and implemented in the implementation file like so:
 
-{% highlight objectivec %}
-+ (NSNumber *) numberWithInt:(int)aInt {
-    return [[NSNumber alloc] initWithInt:aInt];
-}
-{% endhighlight %}
+    + (NSNumber *)numberWithInt:(int)aInt {
+        return [[NSNumber alloc] initWithInt:aInt];
+    }
 
 and are often used for convenience initialisers, for example, NSURL (The cocoa class for URLs), has:
 
-{% highlight objectivec %}
-+ (NSURL *)URLWithString:(NSString *)stringURL; 
-{% endhighlight %}
+    + (NSURL *)URLWithString:(NSString *)stringURL; 
 
 to simplify the allocation and initialisation of NSURLs.
 
 Below you can see three method declarations
 
-{% highlight objectivec %}
-// - means that it is an instance method
-- (void) doSomething;
-- (void) doSomethingWithAString:(NSString *)aString;
-- (void) doSomethingWithAString:(NSString *)aString andInteger:(int)aInt;
-{% endhighlight %}
+    // - means that it is an instance method
+    - (void)doSomething;
+    - (void)doSomethingWithAString:(NSString *)aString;
+    - (void)doSomethingWithAString:(NSString *)aString andInteger:(int)aInt;
 
 These would be implemented like so:
 
-{% highlight objectivec %}
-- (void) doSomething {
-    NSLog(@"Hello!");
-}
-
-- (void) doSomethingWithAString:(NSString *)aString {
-    NSLog(@"Logging a string! %@", aString);
-}
+    - (void)doSomething {
+        NSLog(@"Hello!");
+    }
     
-- (void) doSomethingWithAString:(NSString *)aString andInteger:(int)aInt {
-    NSLog(@"Logging a string: %@ and Integer: %d", aString, aInt);
-}
-
-{% endhighlight %}
+    - (void)doSomethingWithAString:(NSString *)aString {
+        NSLog(@"Logging a string! %@", aString);
+    }
+        
+    - (void)doSomethingWithAString:(NSString *)aString andInteger:(int)aInt {
+        NSLog(@"Logging a string: %@ and Integer: %d", aString, aInt);
+    }
 
 #### Shorthand NSString, NSDictionary, NSArray and NSNumber.
 
 In objective-c, there are shorthand ways to declare strings, dictionaries, arrays and numbers, for example:
 
-{% highlight objectivec %}
-NSString *myString = @"Hello!";
-NSArray *myArray = @[object1, object2, object3];
-NSDictionary *myDict = @{ @"key": anObject, @"anotherKey" : anotherObjectOrValue };
-NSNumber *number = @42;
-{% endhighlight %}
+    NSString *myString = @"Hello!";
+    NSArray *myArray = @[object1, object2, object3];
+    NSDictionary *myDict = @{ @"key": anObject, @"anotherKey" : anotherObjectOrValue };
+    NSNumber *number = @42;
 
 These are especially useful when used in method calls:
 
-{% highlight objectivec %}
-id anObject = [object objectWithArray:@[values,for,array]];
-{% endhighlight %}
+    id anObject = [object objectWithArray:@[values, for, array]];
 
 #### Logging/Debugging
 
@@ -138,9 +112,7 @@ When you log an object to the console, it calls the __description__ method that 
 
 It is called like so:
 
-{% highlight objectivec %}
-NSLog (@"The value of a string is: %@, the value of a float is: %f, the value of an int is: %d and the current date and time is: %@", aString, aFloat, aInt, [NSDate date]);
-{% endhighlight %}
+    NSLog (@"The value of a string is: %@, the value of a float is: %f, the value of an int is: %d, and the current date and time is: %@", aString, aFloat, aInt, [NSDate date]);
 
 #### Next step
 
