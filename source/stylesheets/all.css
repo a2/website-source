@@ -56,6 +56,27 @@ body > section.home > ul > li {
   margin-bottom: 0.2em;
 }
 
+.post-header {
+  margin-bottom: 1em;
+}
+
+.post-header > h1 {
+  margin: 0 auto;
+  font-size: 2em;
+  line-height: 0.75em;
+}
+
+.post-header > span {
+  font-size: 0.75em;
+  color: rgb(158, 171, 179);
+  font-weight: 500;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.post-content > p {
+  padding-bottom: 1em;
+}
+
 code, tt {
   padding: 1px 3px;
   font-family: Inconsolata, "inconsolata", monospace, sans-serif;

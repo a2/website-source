@@ -32,6 +32,17 @@ helpers do
 
     articles[0...count]
   end
+
+  def pretty_tags(article)
+    tags = article.categories || article.tags
+    string = ""
+    tags.each do |t|
+      string += ", " if string.length > 0 
+      string += t.downcase
+    end
+
+    string
+  end
 end
 
 activate :blog do |blog|
