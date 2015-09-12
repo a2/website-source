@@ -22,6 +22,14 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-configure :blog do
+configure :development do
+  activate :livereload
+end
 
+configure :blog do |blog|
+  
+	# Enable pagination
+  blog.paginate = true
+  blog.per_page = 5
+  blog.page_link = "page/{num}"
 end
