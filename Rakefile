@@ -3,12 +3,13 @@ require 'middleman-gh-pages'
 desc "deploy"
 task :deploy => [:build] do
 	Dir.mkdir('deploy')
-	version = "test"
+	version = `git log --pretty=format:'%h' -n 1`
 	Dir.chdir('deploy') do
 		`git init`
 		`git remote add origin git@github.com:DanielTomlinson/danieltomlinson.github.io`
 		`git fetch origin master`
 		`git pull origin master`
+		`rm -rf *`
 		`cp -r ../build/* .`
 		`git add -A`
 		`git commit -am "Updated to: #{version}"`
