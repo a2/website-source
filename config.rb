@@ -53,6 +53,12 @@ helpers do
 
     return yaml
   end
+
+  def talks()
+    yaml = YAML::load_file(File.join(__dir__, 'Talks.yaml'))
+
+    return yaml
+  end
 end
 
 activate :blog do |blog|

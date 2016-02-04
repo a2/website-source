@@ -13,9 +13,9 @@ title: Daniel Tomlinson
 <h2>Projects</h2>
 
 <ul>
-    <% projects().each do |project| %>
-        <li><a href="<%= project['link'] %>"><%= project['name'] %></a>: <%= project['desc'] %></li>
-    <% end %>
+  <% projects().each do |project| %>
+    <li><a href="<%= project['link'] %>"><%= project['name'] %></a>: <%= project['description'] %></li>
+  <% end %>
 </ul>
 
 <p>You can find more projects on <a href="https://github.com/DanielTomlinson">GitHub</a>.</p>
@@ -25,10 +25,9 @@ title: Daniel Tomlinson
 <p>Below are a few of the talks I’ve given recently.</p>
 
 <ul>
-<li>24/09/2015: <a href="#">NSLondon: Panelist</a></li>
-<li>17/07/2015: <a href="https://speakerdeck.com/danieltomlinson/swift-testing-and-architecture">Swift London: Testing and Architecture</a></li>
-<li>22/03/2015: <a href="https://speakerdeck.com/danieltomlinson/swift-meet-objective-c">Swift Summit: Objective-C and Swift Interoperability</a></li>
-<li>05/03/2015: <a href="">Goldsmiths University: A brief introduction to Swift</a></li>
+  <% talks().each do |talk| %>
+    <li><%= talk['date'] %>: <a href="<%= talk['link'] %>"><%= talk['name'] %></a></li>
+  <% end %>
 </ul>
 
 <h2>Blog</h2>
