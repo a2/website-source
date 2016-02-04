@@ -1,0 +1,28 @@
+-
+  link: https://github.com/DanielTomlinson/Resource
+  name: Resource
+  description: A Swift library for building Resource-based web applications
+-
+  link: https://github.com/DanielTomlinson/Stash
+  name: Stash
+  desc: A parallel object cache for Swift projects.
+-
+  link: https://github.com/DanielTomlinson/AssetGen
+  name: AssetGen
+  description: A Swift command line tool to generate structs and enums for asset catalog resources.
+-
+  link: https://github.com/DanielTomlinson/Persist
+  name: Persist
+  description: A Swift abstraction around the core data stack.
+-
+  link: https://github.com/DanielTomlinson/Latch
+  name: Latch
+  description: A Swift abstraction around the iOS/OS X/watchOS/tvOS Keychain.
+-
+  link: https://github.com/DanielTomlinson/Leeroy
+  name: Leeroy
+  description: A script to automagically setup Jenkins on OS X
+-
+  link: https://github.com/DanielTomlinson/Watchman
+  name: Watchman
+  description: A watchOS 2 Hangman game. (iOSDevUK 2015 hackathon)

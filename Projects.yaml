@@ -1,0 +1,25 @@
+---
+-
+    name: Stash
+    link: https://github.com/DanielTomlinson/Stash
+    desc: A parallel object cache for Swift projects.
+-
+    name: Persist
+    link: https://github.com/DanielTomlinson/Persist
+    desc: A Swift Core Data stack that allows for easy configuration.
+-
+    name: Latch
+    link: https://github.com/DanielTomlinson/Latch
+    desc: A Swift keychain abstraction.
+-
+    name: Leeroy
+    link: https://github.com/DanielTomlinson/Leeroy
+    desc: A script to automate Jenkins setup on OS X.
+-
+    name: Watchman
+    link: https://github.com/DanielTomlinson/Watchman
+    desc: A watchOS 2 Hangman Game.
+-
+    name: Twitter-Stream-Haskell
+    link: https://github.com/DanielTomlinson/Twitter-Stream-Haskell
+    desc: Streaming Twitter Searches in Haskell.
