@@ -1,3 +1,5 @@
+require 'yaml'
+
 Time.zone = 'London'
 
 set :css_dir, 'stylesheets'
@@ -45,12 +47,24 @@ helpers do
 
     string
   end
+
+  def projects()
+    yaml = YAML::load_file(File.join(__dir__, 'Projects.yaml'))
+
+    return yaml
+  end
+
+  def talks()
+    yaml = YAML::load_file(File.join(__dir__, 'Talks.yaml'))
+
+    return yaml
+  end
 end
 
 activate :blog do |blog|
   # blog.prefix = "blog"
 
-	blog.permalink = "{title}.html"
+  blog.permalink = "{title}.html"
 
   # Matcher for blog source files
   blog.sources = "articles/{year}-{month}-{day}-{title}.html"
@@ -61,7 +75,7 @@ activate :blog do |blog|
   blog.day_link = "{year}/{month}/{day}.html"
   blog.default_extension = ".md"
 
-	# Enable pagination
+  # Enable pagination
   blog.paginate = true
   blog.per_page = 5
   blog.page_link = "page/{num}"

@@ -10,34 +10,29 @@ title: Daniel Tomlinson
 
 <p>I am a software engineer who has primarily worked on iOS software since 2008. I really enjoy working on application internals, frameworks, and libraries (such as data persistence, networking, and caching), but am also experienced with UI level development with Auto/manual Layout and CoreAnimation.</p>
 
-<p><b>I am currently available for iOS consulting.</b></p>
+<p><b>I am currently unavailable for iOS consulting until April 2016.</b></p>
 
 <p>You can find my resume <a href="https://represent.io/dantoml">here</a>.</p>
 <p>If you'd like to hear more, then you can <a href="mailto:dan@tomlinson.io">email</a> me.</p>
 
 <h2>Projects</h2>
 
-<p>I have listed some recent open source projects below. You can find some more on <a href="https://github.com/DanielTomlinson">GitHub</a>.</p>
-
 <ul>
-    <li><a href="https://github.com/DanielTomlinson/Stash">Stash</a>: A parallel object cache for Swift projects.</li>
-    <li><a href="https://github.com/DanielTomlinson/AssetGen">AssetGen</a>: A swift command line tool to generate structs and enums for Asset Catalog resources.</li>
-	<li><a href="https://github.com/DanielTomlinson/Persist">Persist</a>: A Swiftier approach to Core Data.</li>
-	<li><a href="https://github.com/DanielTomlinson/Latch">Latch</a>: A Swift 2.0 Keychain wrapper.</li>
-	<li><a href="https://github.com/DanielTomlinson/Leeroy">Leeroy</a>: A script to automatically setup Jenkins on OS X.</li>
-	<li><a href="https://github.com/DanielTomlinson/Watchman">Watchman</a>: A watchOS 2 Hangman game.</li>
-	<li><a href="https://github.com/DanielTomlinson/Twitter-Stream-Haskell">Twitter-Stream-Haskell</a>: Streaming tweets in Haskell.</li>
+  <% projects().each do |project| %>
+    <li><a href="<%= project['link'] %>"><%= project['name'] %></a>: <%= project['description'] %></li>
+  <% end %>
 </ul>
+
+<p>You can find more projects on <a href="https://github.com/DanielTomlinson">GitHub</a>.</p>
 
 <h2>Talks</h2>
 
 <p>Below are a few of the talks I’ve given recently.</p>
 
 <ul>
-<li>24/09/2015: <a href="#">NSLondon: Panelist</a></li>
-<li>17/07/2015: <a href="https://speakerdeck.com/danieltomlinson/swift-testing-and-architecture">Swift London: Testing and Architecture</a></li>
-<li>22/03/2015: <a href="https://speakerdeck.com/danieltomlinson/swift-meet-objective-c">Swift Summit: Objective-C and Swift Interoperability</a></li>
-<li>05/03/2015: <a href="">Goldsmiths University: A brief introduction to Swift</a></li>
+  <% talks().each do |talk| %>
+    <li><%= talk['date'] %>: <a href="<%= talk['link'] %>"><%= talk['name'] %></a></li>
+  <% end %>
 </ul>
 
 <h2>Blog</h2>
@@ -54,3 +49,7 @@ title: Daniel Tomlinson
 
 <p>If you wish to get in touch, then you can <a href="https://twitter.com/dantoml">tweet @dantoml</a>, or if it’s more private then <a href="mailto:dan@tomlinson.io">email dan@tomlinson.io</a>.</p>
 </section>
+
+<br />
+<br />
+<br />
