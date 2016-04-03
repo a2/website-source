@@ -1,4 +1,8 @@
 -
+  link: https://github.com/DanielTomlinson/Bees
+  name: Bees
+  description: A Foursquare/Swarm API client for Elixir.
+-
   link: https://github.com/DanielTomlinson/Resource
   name: Resource
   description: A Swift library for building Resource-based web applications.
@@ -6,10 +10,6 @@
   link: https://github.com/DanielTomlinson/Stash
   name: Stash
   description: A parallel object cache for Swift projects.
--
-  link: https://github.com/DanielTomlinson/AssetGen
-  name: AssetGen
-  description: A Swift command line tool to generate structs and enums for asset catalog resources.
 -
   link: https://github.com/DanielTomlinson/Persist
   name: Persist
