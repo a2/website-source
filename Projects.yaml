@@ -1,28 +1,28 @@
 -
-  link: https://github.com/DanielTomlinson/Bees
+  link: https://github.com/DanToml/Bees
   name: Bees
   description: A Foursquare/Swarm API client for Elixir.
 -
-  link: https://github.com/DanielTomlinson/Resource
+  link: https://github.com/DanToml/Resource
   name: Resource
   description: A Swift library for building Resource-based web applications.
 -
-  link: https://github.com/DanielTomlinson/Stash
+  link: https://github.com/DanToml/Stash
   name: Stash
   description: A parallel object cache for Swift projects.
 -
-  link: https://github.com/DanielTomlinson/Persist
+  link: https://github.com/DanToml/Persist
   name: Persist
   description: A Swift abstraction around the core data stack.
 -
-  link: https://github.com/DanielTomlinson/Latch
+  link: https://github.com/DanToml/Latch
   name: Latch
   description: A Swift abstraction around the iOS/OS X/watchOS/tvOS Keychain.
 -
-  link: https://github.com/DanielTomlinson/Leeroy
+  link: https://github.com/DanToml/Leeroy
   name: Leeroy
   description: A script to automagically setup Jenkins on OS X.
 -
-  link: https://github.com/DanielTomlinson/Watchman
+  link: https://github.com/DanToml/Watchman
   name: Watchman
   description: A watchOS 2 Hangman game. (iOSDevUK 2015 hackathon).
