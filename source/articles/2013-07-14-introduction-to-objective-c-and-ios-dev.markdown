@@ -118,4 +118,3 @@ It is called like so:
 
 I'd recommend trying out [First iOS App (Apple Developer Docs)](http://developer.apple.com/library/ios/#referencelibrary/GettingStarted/RoadMapiOS/chapters/RM_YourFirstApp_iOS/Articles/01_CreatingProject.html) to get a good basis for how Xcode and how the above things work in practice.
 
-And looking [here](http://cocoadevcentral.com/d/learn_objectivec/) for more refences.
