@@ -1,15 +1,15 @@
 -
+  link: https://github.com/CocoaPods/CocoaPods
+  name: CocoaPods
+  description: The Cocoa Dependency Manager.
+-
   link: https://github.com/DanToml/Bees
   name: Bees
   description: A Foursquare/Swarm API client for Elixir.
 -
-  link: https://github.com/DanToml/Resource
-  name: Resource
-  description: A Swift library for building Resource-based web applications.
--
-  link: https://github.com/DanToml/Stash
-  name: Stash
-  description: A parallel object cache for Swift projects.
+  link: https://github.com/DanToml/theobroma
+  name: Theobroma
+  description: Autobundling for projects that use CocoaPods.
 -
   link: https://github.com/DanToml/Persist
   name: Persist

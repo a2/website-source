@@ -2,61 +2,49 @@
 title: Danielle Tomlinson
 ---
 <section class="home">
-<h2>Hello</h2>
-
-<p>I’m a software engineer currently travelling and working for <a href="https://ride.com">Ride</a>. A lot of my time is spent writing Swift and Objective-C although I'm currently really enjoying Elixir. I also have an infrequently updated <a href="/blog">blog</a>. Formerly, I wrote for <a href="http://www.theguardian.com/profile/daniel-tomlinson">the</a> <a href="http://www.theguardian.com/technology/2014/mar/08/programming-saved-me-from-bullying">Guardian</a>.</p>
-
-<h2>Projects</h2>
-
-<ul>
-  <% projects().each do |project| %>
-    <li><a href="<%= project['link'] %>"><%= project['name'] %></a>: <%= project['description'] %></li>
-  <% end %>
-</ul>
-
-<p>You can find more projects on <a href="https://github.com/DanToml">GitHub</a>.</p>
-
-<h2>Talks</h2>
-
-<p>Below are a few of the talks I’ve given recently.</p>
-
-<ul>
-  <% talks().each do |talk| %>
-    <li><%= talk['date'] %>: <a href="<%= talk['link'] %>"><%= talk['name'] %></a></li>
-  <% end %>
-</ul>
-
-<h2>Blog</h2>
-
-<p>Below are a few of the <a href="/blog">blog posts</a> I’ve published recently.</p>
-
-<ul>
-<% recent_articles(3).each do |article| %>
-          <li><%= article.date.strftime('%d/%m/%Y') %>: <%= link_to article.title, article %></li>
-<% end %>
-</ul>
 
 
-<h2>Work</h2>
+  <p>Hallo, ich heisse Danielle. Ich bin eine hexe.</p>
 
-<p>I have been primarily working on iOS software since 2008. I really enjoy working on application internals, frameworks, and libraries (such as data persistence, networking, and caching), but am also experienced with UI level development with Auto/manual Layout and CoreAnimation.</p>
+  <p>I build developer tools at <a href="https://circleci.com">CircleCI</a>, and am a core team member at <a href="https://CocoaPods.org">CocoaPods</a>. I'm also an amateur <a href="https://500px.com/dantoml">photographer</a>, <a href="https://speakerdeck.com/dantoml">speaker</a>, and <a href="http://whereis.dantoml.com">traveller</a>. I'm also trying to <a href="http://splinched.com">write</a> about my travels.</p>
 
-<p>If you need someone to help with application architecture, persistence, or networking - I have 20 hours a month available for consultancy.</p>
-<ul>
-  <li>March 2016: Booked</li>
-  <li>April 2016: Available</li>
-  <li>May 2016: Booked</li>
-  <li>June 2016: Booked</li>
-  <li>July 2016: Available</li>
-  <li>August 2016: Available</li>
-</ul>
+  <h2>Open Source</h2>
 
+  <p>I often contribute to open source projects for fun, work, and to help out the community. Some of my projects can be seen below.</p>
 
-<h2>Contact Me</h2>
+  <ul>
+    <% projects().each do |project| %>
+      <li><a href="<%= project['link'] %>"><%= project['name'] %></a>: <%= project['description'] %></li>
+    <% end %>
+  </ul>
 
-<p>If you wish to get in touch, then you can <a href="https://twitter.com/dantoml">tweet @dantoml</a>, or if it’s more private then <a href="mailto:dan@tomlinson.io">email dan@tomlinson.io</a>.</p>
-</section>
+  <a href="https://github.com/dantoml">More</a>
 
+  <h2>Consulting</h2>
+
+  <p>I have 8 years of experience in development of Cocoa(Touch) applications with much of that time being spent on SDKs, networking, and persistence.</p>
+
+  <p>I also have 5 years experience with helping client teams to improve their continous integration, testing (XCTest, KIF, Specta, Quick), deployment (TestFlight, HockeyApp, Crashlytics), and build systems (Mostly Xcode, and Make).</p>
+
+  <p>I have 20 hours a month available for consulting work that can generally be booked in 5 hour blocks. If you would like to talk about a project, email me [dan@tomlinson.io](mailto:dan@tomlinson.io).</p>
+
+  <ul>
+    <li>- September 2016: Reserved for CocoaPods</li>
+    <li>- October 2016: Available</li>
+    <li>- November 2016: Available</li>
+    <li>- December 2016: Booked</li>
+    <li>- January 2017: Available</li>
+    <li>- February 2017: Available</li>
+  </ul>
+
+  <h2>Find Me!</h2>
+
+  <ul>
+    <li>- Twitter: <a href="https://twitter.com/dantoml">@dantoml</a></li>
+    <li>- <a href="https://speakerdeck.com/dantoml">Speakerdeck</a> (I often forget to upload slides, if any are missing, send me a tweet)</li>
+    <li>- <a href="https://500px.com/dantoml">500px</a></li>
+    <li>- <a href="https://github.com/dantoml">GitHub</a></li>
+  </ul>
 <br />
 <br />
 <br />
