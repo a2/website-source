@@ -1,4 +1,9 @@
 
+desc "Compile the site to the build/ directory"
+task :build do
+  sh "bundle exec middleman build"
+end
+
 desc "deploy"
 task :deploy => [:build] do
 	Dir.mkdir('deploy')
